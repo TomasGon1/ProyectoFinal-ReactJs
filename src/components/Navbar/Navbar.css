@@ -1,0 +1,17 @@
+.nav-item {
+    margin-left: 35px;
+    font-size: 20px;
+    font-family: "Handjet", cursive;
+    font-family: "Russo One", sans-serif;
+    transition: transform 500ms ease;
+  }
+  
+  .nav-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .nav-p {
+    margin-left: -5rem;
+  }
+  
+  
