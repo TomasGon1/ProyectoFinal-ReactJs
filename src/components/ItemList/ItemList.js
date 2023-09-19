@@ -3,13 +3,17 @@ import Item from "../Item/Item";
 
 const ItemList = ({ item }) => {
   return (
-    <div className="row" id="itemList">
-      {item.map((i) => (
-        <div className="col-md-3" key={i.id}>
-          <Item items={item} />
-        </div>
-      ))}
-    </div>
+    <div className='row' id='itemlist'>
+      {
+      item.map(item=>
+      
+      <div className='col-md-3'
+       key={item.id}>
+       <Item item={item}/> 
+       </div>
+      )   
+      }
+   </div>
   );
 };
 

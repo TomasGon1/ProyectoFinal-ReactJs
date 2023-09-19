@@ -14,9 +14,9 @@ const ItemListContainer = () => {
       try{
         const data = await new Promise((resolve)=>{
           setTimeout(()=>{
-            resolve(id ? Productos.filter(i => i.category === id) : Productos)
+            resolve(id ? Productos.filter(item => item.category === id) : Productos)
           }, 2500);
-        })
+        });
         setItem(data);
       }catch(error){
         console.log('Error', error);

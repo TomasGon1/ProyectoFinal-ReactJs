@@ -10,9 +10,6 @@ const Item = ({ item }) => {
           <div className="card-body text-center">
             <p className="card-text">{item.name}</p>
           </div>
-          <div className="card-body text-center">
-            <p className="card-text">{item.description}</p>
-          </div>
         </div>
       </div>
     </Link>
