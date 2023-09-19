@@ -1,13 +1,7 @@
-import React from 'react'
-import "./ItemListContainer.css"
-
+import React from "react";
 
 const Perifericos = () => {
-  return (
-    <div className='container-div'>
-      <h2 className='greetings'>Todos los Perifericos</h2>
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default Perifericos
+export default Perifericos;

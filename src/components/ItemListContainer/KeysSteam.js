@@ -1,12 +1,7 @@
-import React from 'react'
-import "./ItemListContainer.css"
+import React from "react";
 
 const KeysSteam = () => {
-  return (
-    <div className='container-div'>
-      <h2 className='greetings'>Todas las Key de Steam</h2>
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default KeysSteam
+export default KeysSteam;
