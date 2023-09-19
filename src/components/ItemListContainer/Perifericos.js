@@ -1,9 +1,11 @@
 import React from 'react'
+import "./ItemListContainer.css"
+
 
 const Perifericos = () => {
   return (
-    <div>
-      <h2>Todos los Perifericos</h2>
+    <div className='container-div'>
+      <h2 className='greetings'>Todos los Perifericos</h2>
     </div>
   )
 }

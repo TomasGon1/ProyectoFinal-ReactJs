@@ -1,9 +1,10 @@
 import React from 'react'
+import "./ItemListContainer.css"
 
 const Componentes = () => {
   return (
-    <div>
-      <h2>Todos los Componentes</h2>
+    <div className='container-div'>
+      <h2 className='greetings'>Todos los Componentes</h2>
     </div>
   )
 }

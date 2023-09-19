@@ -1,9 +1,10 @@
 import React from 'react'
+import "./ItemListContainer.css"
 
 const KeysSteam = () => {
   return (
-    <div>
-      <h2>Todas las Key de Steam</h2>
+    <div className='container-div'>
+      <h2 className='greetings'>Todas las Key de Steam</h2>
     </div>
   )
 }

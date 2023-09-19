@@ -1,17 +1,34 @@
 .nav-item {
-    margin-left: 35px;
-    font-size: 20px;
-    font-family: "Handjet", cursive;
-    font-family: "Russo One", sans-serif;
-    transition: transform 500ms ease;
-  }
-  
-  .nav-item:hover {
-    transform: scale(1.05);
-  }
-  
-  .nav-p {
-    margin-left: -5rem;
-  }
-  
-  
+  margin-left: 2.5rem;
+  font-size: 1.3rem;
+  font-family: "Handjet", cursive;
+  font-family: "Russo One", sans-serif;
+  transition: transform 500ms ease;
+}
+
+.nav-item:hover {
+  transform: scale(1.05);
+}
+
+.cart {
+  margin-left: 20rem ;
+  transition: transform 500ms ease;
+}
+
+.cart:hover{
+  transform: scale(1.05);
+}
+
+.cart-link{
+  font-size: 1.3rem;
+  color: black;
+  font-family: "Handjet", cursive;
+  font-family: "Russo One", sans-serif;
+  text-decoration: none;
+}
+
+.nav-tittle {
+  font-family: "Handjet", cursive;
+  font-family: "Russo One", sans-serif;
+  font-size: 1.9rem;
+}
