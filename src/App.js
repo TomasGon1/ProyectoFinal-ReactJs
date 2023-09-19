@@ -1,12 +1,10 @@
 import Navbar from "./components/Navbar/Navbar";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemListContainer from "../src/components/ItemListContainer/ItemListContainer.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import KeysSteam from "./components/ItemListContainer/KeysSteam";
-import Componentes from "./components/ItemListContainer/Componentes";
-import Perifericos from "./components/ItemListContainer/Perifericos";
-import CartWidget from "./components/CartWidget/CartWidget";
 import Error404 from "./components/Error404";
-import "./App.css";
+import ItemDetailConteiner from "../src/components/ItemDetailContainer/ItemDetailContainer.js"
+import CartWidget from "./components/CartWidget/CartWidget";
+
 
 function App() {
   return (
@@ -14,16 +12,10 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route
-            path="/"
-            element={
-              <ItemListContainer greetings="Este es el Home donde van todos los productos" />
-            }
-          />
-          <Route path="/keysteam" element={<KeysSteam />} />
-          <Route path="/componentes" element={<Componentes />} />
-          <Route path="/perifericos" element={<Perifericos />} />
-          <Route path="/cart" element={<CartWidget />} />
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/category/:id" element={<ItemListContainer />} />
+          <Route path="/item/:id" element={<ItemDetailConteiner />} />
+          <Route parth="/cart" element={<CartWidget/>}/>
           <Route path="*" element={<Error404 />} />
         </Routes>
       </BrowserRouter>

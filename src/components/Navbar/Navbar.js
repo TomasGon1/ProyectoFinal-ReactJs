@@ -25,17 +25,17 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link active" to="/keysteam">
+                <Link className="nav-link active" to={"/category/keysteam"}>
                   <i className="bi bi-steam"></i> Keys Steam
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/componentes">
+                <Link className="nav-link" to={"/category/componentes"}>
                   <i className="bi bi-pc-display"></i> Componentes
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/perifericos">
+                <Link className="nav-link" to={"/category/perifericos"}>
                   <i className="bi bi-mouse-fill"></i> Perifericos
                 </Link>
               </li>

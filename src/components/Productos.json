@@ -5,7 +5,7 @@
     "description": "Sobrevivir es solo el principio. Con una mecánica de juego modernizada, una historia reimaginada y unos gráficos espectacularmente detallados, Resident Evil 4 supone el renacimiento de un gigante del mundo de los videojuegos.",
     "image": "../images/RE4RE.jpeg",
     "price": 12958,
-    "stock": 25,
+    "stock": 10,
     "category": "keysteam"
   },
   {
@@ -14,7 +14,7 @@
     "description": "Con más de 175 premios al Juego del año y más de 250 valoraciones perfectas, Red Dead Redemption 2 es la épica historia de Arthur Morgan y la banda de Van der Linde, que huyen por toda América en el albor de una nueva era. También incluye acceso al mundo multijugador compartido de Red Dead Online.",
     "image": "../images/RDR2.jpeg",
     "price": 11299,
-    "stock": 15,
+    "stock": 10,
     "category": "keysteam"
   },
   {
@@ -32,7 +32,7 @@
     "description": "Sumérgete en la simulación de supervivencia en mundo abierto ambientada en las condiciones extremas de la inexplorada selva amazónica. Utilice técnicas de supervivencia de la vida real para crear, cazar, luchar y reunir recursos, establecer un refugio improvisado o levantar una fortaleza. Cuida tus heridas y mantén la salud mental, solo o con amigos.",
     "image": "../images/GreenHell.jpg",
     "price": 2000,
-    "stock": 40,
+    "stock": 10,
     "category": "keysteam"
   },
   {
@@ -41,7 +41,7 @@
     "description": "Socket: LGA1200, Frecuencia: 3.6 GHz, Frecuencia Turbo Max.: 5.2 GHz, Nucleos: 10, L3 Caché: 20MB, Chipset Grafico: Intel UHD Graphics 630, Desbloqueado: Si.",
     "image": "../images/Corei910th.jpg",
     "price": 36340,
-    "stock": 20,
+    "stock": 10,
     "category": "componentes"
   },
   {
@@ -50,7 +50,7 @@
     "description": "Socket: AM4, Frecuencia: 3.8GHz, Frecuencia Max.: 4.4GHz, Nucleos: 6, Caché: 32 MB, Chipset Grafico: No, Desbloqueado: Si, Accesorio Incluido: Air Cooler.",
     "image": "../images/AmdRyzen53600X.jpeg",
     "price": 390000,
-    "stock": 5,
+    "stock": 10,
     "category": "componentes"
   },
   {
@@ -68,7 +68,7 @@
     "description": "Auricular marca Logitech inalambrico USB miniplug 3,5mm con microfono integrado fijo, volteable para sinleciar. Compatible con PC, Consolas y Celulares, LA duracion de la bateria depende del uso y los dispositivos, pero su estimacion es de 12 horas sin LED y a 50% de volumen.",
     "image": "../images/AuricularlogitechG935.jpeg",
     "price": 105860,
-    "stock": 30,
+    "stock": 10,
     "category": "perifericos"
   },
   {
@@ -77,7 +77,7 @@
     "description": "Cada tecla de G213 está optimizada para mejorar la experiencia táctil y ofrecer una respuesta superrápida, hasta 4 veces superior a la de los teclados estándar. Un teclado moderno con cinco zonas de iluminación individuales con un espectro de aproximadamente 16,8 millones de colores. Cambia colores según una configuración o un juego específico, o simplemente para usar tus favoritos. Los accidentes ocurren, por eso G213 Prodigy se ha creado para la vida de verdad. No importa si estás jugando o trabajando, G213 Prodigy lo aguanta todo, con una construcción duradera que resiste salpicaduras*, migas y suciedad para que los accidentes del mundo real no se interpongan en el camino.",
     "image": "../images/tecladologitechg213.jpg",
     "price": 15990,
-    "stock": 14,
+    "stock": 10,
     "category": "perifericos"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Sensor: Optico HERO™, DPI: de 100 a 25600 DP, Boton Rueda: Si, Iluminacion: Si, Conectividad: Cable USB mallado con una longitud de 2,10 metros, Numero de Botones: 11. ",
     "image": "../images/MouseLogitechG502KDA.jpeg",
     "price": 47000,
-    "stock": 7,
+    "stock": 10,
     "category": "perifericos"
   }
 ]
