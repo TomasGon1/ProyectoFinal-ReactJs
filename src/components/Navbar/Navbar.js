@@ -8,7 +8,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar bg-secondary navbar-expand-lg">
         <div className="container-fluid">
-          <Link class="navbar-brand nav-tittle" to="/">
+          <Link class="navbar-brand nav-tittle" to={"/"}>
             <i className="bi bi-controller"></i> Tienda Gamers
           </Link>
           <button
