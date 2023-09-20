@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Productos from "../Productos.json";
-import "./ItemListContainer.css";
 import ItemList from "../ItemList/ItemList";
 
 const ItemListContainer = () => {
@@ -28,7 +27,7 @@ fetchData();
   return (
     <div className="container">
       <div className="row">
-        <ItemList items={item} />
+        <ItemList item={item} />
       </div>
     </div>
   );

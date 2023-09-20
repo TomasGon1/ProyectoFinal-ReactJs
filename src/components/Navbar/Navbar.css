@@ -6,20 +6,21 @@
   transition: transform 500ms ease;
 }
 
-.nav-item:hover {
+.nav-item .nav-style:hover {
   transform: scale(1.05);
+  color: azure;
 }
 
 .cart {
-  margin-left: 20rem ;
+  margin-left: 20rem;
   transition: transform 500ms ease;
 }
 
-.cart:hover{
+.cart:hover {
   transform: scale(1.05);
 }
 
-.cart-link{
+.cart-link {
   font-size: 1.3rem;
   color: black;
   font-family: "Handjet", cursive;

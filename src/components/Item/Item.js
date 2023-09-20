@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Item.css"
 
 const Item = ({ item }) => {
   return (
@@ -8,7 +9,7 @@ const Item = ({ item }) => {
         <div className="card-border border-0">
           <img src={item.image} className="card-img-top" alt={item.name} />
           <div className="card-body text-center">
-            <p className="card-text">{item.name}</p>
+            <p className="card-text p-style">{item.name}</p>
           </div>
         </div>
       </div>

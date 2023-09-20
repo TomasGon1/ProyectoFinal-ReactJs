@@ -1,5 +1,6 @@
 import React from "react";
 import Item from "../Item/Item";
+import "./ItemList.css"
 
 const ItemList = ({ item }) => {
   return (
@@ -7,7 +8,7 @@ const ItemList = ({ item }) => {
       {
       item.map(item=>
       
-      <div className='col-md-3'
+      <div className='col-md-3 card-style'
        key={item.id}>
        <Item item={item}/> 
        </div>
