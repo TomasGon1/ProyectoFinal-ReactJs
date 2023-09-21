@@ -1,0 +1,19 @@
+.btn-style {
+  background-color: black;
+  border: 1px solid;
+  color: azure;
+  border-radius: .25rem;
+  padding: .3rem .9rem;
+  margin-left: .3rem;
+}
+
+.btn-style:hover{
+    background-color: azure;
+    color: black;
+}
+
+.w-style {
+  font-family: "Handjet", cursive;
+  font-family: "Russo One", sans-serif;
+  text-decoration: none;
+}
