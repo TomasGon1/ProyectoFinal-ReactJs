@@ -2,7 +2,7 @@ import React from "react";
 
 const CartWidget = () => {
   return (
-    <div className="color">
+    <div>
       <i className="bi bi-cart-fill"></i>
       <b>0</b>
     </div>

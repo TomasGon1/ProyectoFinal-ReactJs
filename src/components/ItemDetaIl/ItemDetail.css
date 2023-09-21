@@ -6,6 +6,9 @@
 
 .color{
   background-color: azure;
+  border: 1px solid azure;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px 2px azure;
 }
 
 .prod-tittle {
