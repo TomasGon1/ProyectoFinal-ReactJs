@@ -3,3 +3,19 @@
   font-family: "Russo One", sans-serif;
   text-decoration: none;
 }
+
+.color{
+  background-color: azure;
+}
+
+.prod-tittle {
+  font-size: 2rem;
+}
+
+.price-s{
+  font-size: 1.5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: black;
+  color:azure;
+}

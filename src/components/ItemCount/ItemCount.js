@@ -20,8 +20,8 @@ const ItemCount = ({stockItems}) => {
 
   return (
     <div className="container" id="itemcount">
-            <div className="row mb-3 justify-content-center">
-                <div className="col-md-2">
+            <div className="div-s mb-2 mt-1">
+                <div>
                     <div className="btn-group" role="group" aria-label="Basic outlined example">
                         <button type="button" className="btn-style w-style" onClick={decrementarStock}>-</button>
                         <button type="button" className="btn-style w-style">{counter}</button>
@@ -29,13 +29,12 @@ const ItemCount = ({stockItems}) => {
                      </div>
                 </div>
             </div>
-         <div className="row justify-content-center">
-         <div className="col-md-2">
+         <div className="div-s">
+           <div>
             <button type="button" className="btn-style w-style" >Agregar al carrito</button>    
-                
-                </div>
-            </div>
-        </div>  
+           </div>
+          </div>
+      </div>  
   );
 };
 

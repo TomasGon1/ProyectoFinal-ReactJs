@@ -17,3 +17,8 @@
   font-family: "Russo One", sans-serif;
   text-decoration: none;
 }
+
+.div-s {
+  display: flex;
+  justify-content: center;
+}
