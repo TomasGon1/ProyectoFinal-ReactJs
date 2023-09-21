@@ -17,8 +17,10 @@
   transition: transform 500ms ease;
 }
 
-.cart:hover {
+.cart .cart-link:hover {
   transform: scale(1.05);
+  color: azure;
+  text-shadow: 1px 1px 10px black;
 }
 
 .cart-link {
