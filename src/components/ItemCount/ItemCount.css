@@ -12,6 +12,15 @@
     color: black;
 }
 
+.b-style{
+  background-color: black;
+  border: 1px solid;
+  color: azure;
+  border-radius: .25rem;
+  padding: .3rem .9rem;
+  margin-left: .3rem;
+}
+
 .w-style {
   font-family: "Handjet", cursive;
   font-family: "Russo One", sans-serif;

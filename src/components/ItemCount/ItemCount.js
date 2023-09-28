@@ -24,7 +24,7 @@ const ItemCount = ({stockItems}) => {
                 <div>
                     <div className="btn-group" role="group" aria-label="Basic outlined example">
                         <button type="button" className="btn-style w-style" onClick={decrementarStock}>-</button>
-                        <button type="button" className="btn-style w-style">{counter}</button>
+                        <b type="button" className="b-style w-style">{counter}</b>
                         <button type="button" className="btn-style w-style" onClick={incrementarStock}>+</button>
                      </div>
                 </div>

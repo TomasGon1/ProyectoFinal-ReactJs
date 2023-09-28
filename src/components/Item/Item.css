@@ -6,3 +6,20 @@
   color: black;
 }
 
+.btn-style{
+  background-color: black;
+  border: 1px solid;
+  color: azure;
+  border-radius: .25rem;
+  padding: .3rem .9rem;
+  margin-left: .3rem;
+  width: 96%;
+  font-family: "Handjet", cursive;
+  font-family: "Russo One", sans-serif;
+  text-decoration: none;
+}
+
+.btn-style:hover{
+  background-color: azure;
+  color: black;
+}
