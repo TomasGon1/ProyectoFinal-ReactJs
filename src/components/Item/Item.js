@@ -1,22 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Item.css"
+import "./Item.css";
 
 const Item = ({ item }) => {
   return (
-    
-      <div className="container">
-        <div className="card-border border-0">
-          <img src={item.image} className="card-img-top card-img" alt={item.name} />
-          <div className="card-body text-center">
-            <p className="card-text p-style">{item.name}</p>
-          <Link to={"/item/" + item.id} className="text-decoration-none">
-          <button className="btn-style">Ver Producto</button>
-          </Link>
-          </div>
-        </div>
+    <div className="product-card">
+      <img src={item.image} className="card-img" alt={item.name} />
+      <div className="card-info">
+        <p className="card-name">{item.name}</p>
+        <p className="card-price">${item.price}</p>
+        <Link to={"/item/" + item.id} className="card-link">
+          <button className="card-btn">Ver Producto</button>
+        </Link>
       </div>
-    
+    </div>
   );
 };
 

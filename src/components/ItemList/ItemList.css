@@ -1,24 +1,13 @@
-.card-style {
-  border: 1px solid black;
-  border-radius: 1rem;
-  margin-left: 2rem;
-  margin-top: 2rem;
-  padding: 1rem 1rem;
-  background-color: azure;
-}
-
-.card-style:hover {
-  box-shadow: 2px 2px 19px 0px black;
-  transition: box-shadow 800ms;
-  cursor: pointer;
-}
-
 .container-div{
   width: 100%;
   margin: 10px auto;
   display: flex;
   justify-content: center;
   
+}
+
+.card-product{
+  margin-bottom: 20px;
 }
 
 .grid-div{

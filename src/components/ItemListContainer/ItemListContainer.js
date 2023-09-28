@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Productos from "../Productos.json";
 import ItemList from "../ItemList/ItemList";
+import "./ItemListContainer.css"
 
 const ItemListContainer = () => {
   const [item, setItem] = useState([]);
@@ -25,10 +26,10 @@ fetchData();
   }, [id])
 
   return (
-    <div className="container">
-      <div className="row">
-        <ItemList item={item} />
-      </div>
+    <div className="div-container">
+      
+      <ItemList item={item} />
+      
     </div>
   );
 };
