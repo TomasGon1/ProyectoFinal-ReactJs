@@ -4,16 +4,18 @@ import "./ItemList.css"
 
 const ItemList = ({ item }) => {
   return (
-    <div className='row' id='itemlist'>
+    <div className='container-div'>
+      <div className="grid-div">
       {
       item.map(item=>
       
-      <div className='col-md-3 card-style'
+      <div className='card-style'
        key={item.id}>
        <Item item={item}/> 
        </div>
       )   
       }
+      </div>
    </div>
   );
 };
