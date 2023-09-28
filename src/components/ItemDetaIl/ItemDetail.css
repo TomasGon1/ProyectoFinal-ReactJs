@@ -70,11 +70,9 @@
   font-family: "Russo One", sans-serif;
 }
 
-.prod-stock{
-  margin-left: 5px;
-  font-weight: bold;
-  font-family: "Handjet", cursive;
-  font-family: "Russo One", sans-serif;
+.prod-count{
+  display: flex;
+  align-self: center;
 }
 
 /* media queries */

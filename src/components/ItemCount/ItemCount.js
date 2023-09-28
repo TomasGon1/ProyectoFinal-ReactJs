@@ -1,40 +1,48 @@
 import React from "react";
 import { useState } from "react";
-import "./ItemCount.css"
+import Swal from "sweetalert2";
+import "./ItemCount.css";
 
-const ItemCount = ({stockItems}) => {
+const ItemCount = ({ stockItems }) => {
   const [counter, setCounter] = useState(1);
   const [stock, setStock] = useState(stockItems);
 
-  const incrementarStock = () => {
-    if (counter < stock) {
-      setCounter(counter + 1);
-    }
+  const agregarProd = () => {
+    counter < stock
+      ? setCounter(counter + 1)
+      : Swal.fire({
+          icon: "error",
+          text: "Lo sentimos, no hay suficiente stock.",
+          toast: true,
+          position: "bottom-end",
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+        });
   };
 
-  const decrementarStock = () => {
-    if (counter > 1) {
-      setCounter(counter - 1);
-    }
+  const quitarProd = () => {
+    counter > 1 && setCounter(counter - 1);
   };
 
   return (
-    <div className="container" id="itemcount">
-            <div className="div-s mb-2 mt-1">
-                <div>
-                    <div className="btn-group" role="group" aria-label="Basic outlined example">
-                        <button type="button" className="btn-style w-style" onClick={decrementarStock}>-</button>
-                        <b type="button" className="b-style w-style">{counter}</b>
-                        <button type="button" className="btn-style w-style" onClick={incrementarStock}>+</button>
-                     </div>
-                </div>
-            </div>
-         <div className="div-s">
-           <div>
-            <button type="button" className="btn-style w-style" >Agregar al carrito</button>    
-           </div>
-          </div>
-      </div>  
+    <div className="count-container">
+      <div className="count-section">
+        <button type="button" className="count-btn" onClick={quitarProd}>
+          -
+        </button>
+        <h3 className="count-value">{counter}</h3>
+        <button type="button" className="count-btn" onClick={agregarProd}>
+          +
+        </button>
+      </div>
+
+      <div className="count-section">
+        <button type="button" className="add-btn">
+          Agregar al carrito
+        </button>
+      </div>
+    </div>
   );
 };
 

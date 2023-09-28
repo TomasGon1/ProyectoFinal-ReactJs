@@ -1,33 +1,61 @@
-.btn-style {
-  background-color: black;
-  border: 1px solid;
-  color: azure;
-  border-radius: .25rem;
-  padding: .3rem .9rem;
-  margin-left: .3rem;
+.count-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
 }
 
-.btn-style:hover{
-    background-color: azure;
-    color: black;
+.count-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.b-style{
-  background-color: black;
-  border: 1px solid;
-  color: azure;
-  border-radius: .25rem;
-  padding: .3rem .9rem;
-  margin-left: .3rem;
+.count-section:first-of-type{
+  border: 2px solid black;
+  border-radius: 28px;
+  font-weight: bold;
+  gap: 18px;
+  padding: 0 18px;
 }
 
-.w-style {
+.count-btn{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 8px;
+  font-weight: bold;
+  position: relative;
   font-family: "Handjet", cursive;
   font-family: "Russo One", sans-serif;
-  text-decoration: none;
 }
 
-.div-s {
-  display: flex;
-  justify-content: center;
+.count-value{
+  font-size: 24px;
+  text-align: center;
+  margin: 0 10px;
+  font-family: "Handjet", cursive;
+  font-family: "Russo One", sans-serif;
+}
+
+.add-btn{
+  background-color: azure;
+  border-radius: 20px;
+  border: 1px solid;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 20px; 
+  margin-bottom: 5px;
+  margin-top: -10px;
+  transition: background-color 0.3s, transform 0.3s;
+  font-family: "Handjet", cursive;
+  font-family: "Russo One", sans-serif;
+}
+
+.add-btn:hover{
+  background-color: black;
+  color: azure;
+  transform: scale(1.01);
 }
