@@ -12,7 +12,7 @@ const ItemCount = ({ stockItems }) => {
       ? setCounter(counter + 1)
       : Swal.fire({
           icon: "error",
-          text: "Lo sentimos, no hay suficiente stock.",
+          text: "Stock agotado, lo sentimos.",
           toast: true,
           position: "bottom-end",
           showConfirmButton: false,
