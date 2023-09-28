@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Productos from "../Productos.json";
 import ItemDetail from "../ItemDetaIl/ItemDetail";
+import "./ItemDetailContainer.css"
 
 const ItemDetailContainer = () => {
   const [item, setItem] = useState([]);
@@ -20,7 +21,7 @@ const ItemDetailContainer = () => {
   }, [id]);
 
   return (
-    <div className="container">
+    <div className="div-container">
       <ItemDetail item={item} />
     </div>
   );

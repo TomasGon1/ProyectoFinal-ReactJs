@@ -1,22 +1,24 @@
-import React from 'react'
-import ItemCount from "../ItemCount/ItemCount"
-import "./ItemDetail.css"
+import React from "react";
+import ItemCount from "../ItemCount/ItemCount";
+import "./ItemDetail.css";
 
-const ItemDetail = ({item}) => {
+const ItemDetail = ({ item }) => {
   return (
-    <div className='row'>
-      <div className='col-md-4 offset-md-4 mt-4 color'>
-      <img src={item.image} className='img-fluid mt-2' alt={item.name}/>
-      <h2 className='style prod-tittle'>{item.name}</h2>
-      <p className='style'>{item.description}</p>
-      <p className='style price-s text-center mt-3'>Precio: ${item.price}</p>
-      <p className='style mt-2'>Articulos disponibles: {item.stock}</p>
-      </div>
-      <div className='mt-2'>
-        <ItemCount stockItems={10}/>
+    <div className="item-detail-container">
+      <div className="item-detail">
+        <div className="img-detail">
+          <img src={item.image} alt={item.name} />
+        </div>
+        <div className="info-detail">
+          <h2 className="prod-tittle">{item.name}</h2>
+          <p className="prod-description">{item.description}</p>
+          <p className="prod-price">Precio: ${item.price}</p>
+          <p className="prod-stock">Articulos disponibles: {item.stock}</p>
+          <ItemCount stockItems={10} />
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ItemDetail
+export default ItemDetail;
