@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "name": "Auricular Gamer Logitech G935 7.1 Inalambrico",
+    "name": "Auricular Gamer Logitech G935",
     "description": "Auricular marca Logitech inalambrico USB miniplug 3,5mm con microfono integrado fijo, volteable para sinleciar. Compatible con PC, Consolas y Celulares, LA duracion de la bateria depende del uso y los dispositivos, pero su estimacion es de 12 horas sin LED y a 50% de volumen.",
     "image": "/images/AuricularlogitechG935.jpeg",
     "price": "105.860",
@@ -82,7 +82,7 @@
   },
   {
     "id": 10,
-    "name": "Mouse Logitech G502 Hero Edicion KDA Blanco",
+    "name": "Mouse Logitech G502 Hero",
     "description": "Sensor: Optico HERO™, DPI: de 100 a 25600 DP, Boton Rueda: Si, Iluminacion: Si, Conectividad: Cable USB mallado con una longitud de 2,10 metros, Numero de Botones: 11. ",
     "image": "/images/MouseLogiKDA.jpg",
     "price": "47.000",
