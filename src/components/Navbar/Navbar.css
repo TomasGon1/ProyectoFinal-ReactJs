@@ -1,6 +1,6 @@
 .nav-item {
   margin-left: 2.5rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-family: "Handjet", cursive;
   font-family: "Russo One", sans-serif;
   transition: transform 500ms ease;
@@ -21,7 +21,7 @@
 }
 
 .cart {
-  margin-left: 12rem;
+  margin-left: 16rem;
   transition: transform 500ms ease;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .cart-link {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: black;
   font-family: "Handjet", cursive;
   font-family: "Russo One", sans-serif;
@@ -48,5 +48,5 @@
 .nav-tittle {
   font-family: "Handjet", cursive;
   font-family: "Russo One", sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
 }

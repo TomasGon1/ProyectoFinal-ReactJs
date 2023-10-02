@@ -25,11 +25,6 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link nav-style" to={"/"}>
-                  <i class="bi bi-house-fill"></i> Inicio
-                </Link>
-              </li>
-              <li className="nav-item">
                 <Link className="nav-link nav-style" to={"/category/keysteam"}>
                   <i className="bi bi-steam"></i> Keys Steam
                 </Link>
