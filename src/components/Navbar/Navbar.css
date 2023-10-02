@@ -10,14 +10,28 @@
   transform: scale(1.05);
   color: azure;
   text-shadow: 1px 1px 10px black;
+  text-decoration: underline azure;
+}
+
+.nav-item .nav-style:focus {
+  transform: scale(1.05);
+  color: azure;
+  text-shadow: 1px 1px 10px black;
+  text-decoration: underline azure;
 }
 
 .cart {
-  margin-left: 20rem;
+  margin-left: 12rem;
   transition: transform 500ms ease;
 }
 
 .cart .cart-link:hover {
+  transform: scale(1.05);
+  color: azure;
+  text-shadow: 1px 1px 10px black;
+}
+
+.cart .cart-link:focus {
   transform: scale(1.05);
   color: azure;
   text-shadow: 1px 1px 10px black;
@@ -34,5 +48,5 @@
 .nav-tittle {
   font-family: "Handjet", cursive;
   font-family: "Russo One", sans-serif;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
