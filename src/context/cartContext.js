@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react'
 
 const cartContext = () => {
-  return <div>cartContext</div>;
-};
+  return (
+    <div>cartContext</div>
+  )
+}
 
-export default cartContext;
+export default cartContext
