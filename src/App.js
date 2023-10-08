@@ -5,6 +5,7 @@ import ItemDetailConteiner from "../src/components/ItemDetailContainer/ItemDetai
 import CartWidget from "./components/CartWidget/CartWidget";
 import Error404 from "./components/Error404";
 import { Checkout } from "./components/Checkout/Checkout";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

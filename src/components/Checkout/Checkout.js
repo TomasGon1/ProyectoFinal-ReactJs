@@ -63,7 +63,6 @@ export const Checkout = () => {
         addDoc(collection(db, "orders"), orden)
           .then((docRef) => {
             setOrdenId(docRef.id);
-            /* removeproduct() */
           })
           .catch((error) => {
             console.log("Error en la creacion de la orden", error);
@@ -74,8 +73,6 @@ export const Checkout = () => {
         console.log("No se puede actualizar el stock", error);
         setError("No se actualizo el stock");
       });
-
-
   };
 
   return (
