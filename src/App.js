@@ -5,8 +5,8 @@ import ItemDetailConteiner from "../src/components/ItemDetailContainer/ItemDetai
 import Error404 from "./components/Error404";
 import { Checkout } from "./components/Checkout/Checkout";
 import Footer from "./components/Footer/Footer";
-import CartAux from "./context/CartContext";
-import Cart from "./components/Cart/Cart"
+import CartAux from "./context/cartContext"
+import Cart from "./components/Cart/Cart";
 
 function App() {
   return (
