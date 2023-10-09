@@ -18,7 +18,7 @@ export const Checkout = () => {
   const [error, setError] = useState("");
   const [ordenId, setOrdenId] = useState("");
 
-  const { cart, removeItem, total } = useCartContext();
+  const { cart, clearCart, total } = useCartContext();
 
   const formulario = (event) => {
     event.preventDefault();
@@ -66,7 +66,7 @@ export const Checkout = () => {
         addDoc(collection(db, "orders"), orden)
           .then((docRef) => {
             setOrdenId(docRef.id);
-            removeItem();
+            clearCart();
           })
           .catch((error) => {
             console.log("Error en crear la orden", error);
@@ -148,10 +148,10 @@ export const Checkout = () => {
         {error && <p>{error}</p>}
 
         {ordenId && (
-          <p>
-            ¡Gracias por tu compra! <br /> Este es tu numero de orden: <br />{" "}
-            {ordenId}{" "}
-          </p>
+         <p>
+         ¡Gracias por tu compra! <br /> Este es tu numero de orden: <br />{" "}
+         {ordenId}{" "}
+       </p>
         )}
 
         <div>

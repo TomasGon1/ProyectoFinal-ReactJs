@@ -1,6 +1,5 @@
 import React, { useState, useContext } from "react";
-
-
+import Swal from "sweetalert2";
 
 const CartContext = React.createContext("");
 
@@ -32,14 +31,22 @@ const CartAux = ({ children }) => {
 
   const clearCart = () => setCart([]);
 
-  const insideCart = (id) => 
+  const insideCart = (id) =>
     cart.find((product) => product.i === id) ? true : false;
-  
 
   const removeItem = (id) => {
     setCart(cart.filter((product) => product.id !== id));
-  }
-  
+    Swal.fire({
+      icon: "success",
+      text: "Producto eliminado con exito!",
+      toast: true,
+      position: "bottom-end",
+      showConfirmButton: false,
+      timer: 1500,
+      timerProgressBar: true,
+      iconColor: "#30a700",
+    });
+  };
 
   return (
     <CartContext.Provider

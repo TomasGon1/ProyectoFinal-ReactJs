@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../../context/cartContext";
+import Swal from "sweetalert2";
 import "./ItemDetail.css";
 
 const ItemDetail = ({ item }) => {
@@ -10,6 +11,16 @@ const ItemDetail = ({ item }) => {
   const onAdd = (quantity) => {
     setGoCart(true);
     addItem(item, quantity);
+    Swal.fire({
+      icon: "success",
+      text: "Producto agregado al carrito!",
+      toast: true,
+      position: "bottom-end",
+      showConfirmButton: false,
+      timer: 1500,
+      timerProgressBar: true,
+      iconColor: "#30a700",
+    });
   };
 
   return (
