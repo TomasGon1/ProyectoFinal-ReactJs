@@ -1,8 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import ItemCount from "../ItemCount/ItemCount";
+import { Link } from "react-router-dom";
+import { useCartContext } from "../../context/CartContext";
 import "./ItemDetail.css";
 
 const ItemDetail = ({ item }) => {
+  
+  const [goCart, setGoCart] = useState(false);
+  const {addItem} = useCartContext();
+  const onAdd = (quantity) =>{
+    setGoCart(true);
+    addItem(item, quantity);
+  };
+  
   return (
     <div className="item-detail-container">
       <div className="item-detail">
@@ -14,7 +24,7 @@ const ItemDetail = ({ item }) => {
           <p className="prod-description">{item.description}</p>
           <p className="prod-price">Precio: ${item.price}</p>
           <div className="prod-count">
-            <ItemCount stockItems={10} />
+           {goCart ? <Link to={'/cart'}>Finalizr Compra!</Link> : <ItemCount stock={10} initial={0} onAdd={onAdd} />} 
           </div>
         </div>
       </div>

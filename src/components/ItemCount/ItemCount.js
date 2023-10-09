@@ -1,11 +1,14 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 import "./ItemCount.css";
 
-const ItemCount = ({ stockItems }) => {
-  const [counter, setCounter] = useState(1);
-  const [stock, setStock] = useState(stockItems);
+const ItemCount = ({ initial, stock, onAdd }) => {
+  const [counter, setCounter] = useState(parseInt(initial));
+ 
+  useEffect(()=>{
+    setCounter(parseInt(initial))
+  }, [initial])
 
   const agregarProd = () => {
     counter < stock
@@ -22,13 +25,13 @@ const ItemCount = ({ stockItems }) => {
   };
 
   const quitarProd = () => {
-    counter > 1 && setCounter(counter - 1);
+    setCounter(counter - 1);
   };
 
   return (
     <div className="count-container">
       <div className="count-section">
-        <button type="button" className="count-btn" onClick={quitarProd}>
+        <button type="button" className="count-btn" disabled={counter <= 1} onClick={quitarProd}>
           -
         </button>
         <h3 className="count-value">{counter}</h3>
@@ -38,7 +41,7 @@ const ItemCount = ({ stockItems }) => {
       </div>
 
       <div className="count-section">
-        <button type="button" className="add-btn">
+        <button type="button" className="add-btn" disabled={stock <=0} onClick={()=> onAdd(counter)}>
           Agregar al carrito
         </button>
       </div>
