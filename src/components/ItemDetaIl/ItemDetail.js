@@ -24,7 +24,7 @@ const ItemDetail = ({ item }) => {
           <p className="prod-description">{item.description}</p>
           <p className="prod-price">Precio: ${item.price}</p>
           <div className="prod-count">
-           {goCart ? <Link to={'/cart'}>Finalizr Compra!</Link> : <ItemCount stock={10} initial={0} onAdd={onAdd} />} 
+           {goCart ? <Link to={'/cart'}><button className="end-btn">Finalizar Compra!</button></Link> : <ItemCount stock={10} initial={1} onAdd={onAdd} />} 
           </div>
         </div>
       </div>

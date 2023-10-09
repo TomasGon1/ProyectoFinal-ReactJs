@@ -75,6 +75,27 @@
   align-self: center;
 }
 
+.end-btn{
+  background-color: azure;
+  border-radius: 20px;
+  border: 1px solid;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 20px; 
+  margin-bottom: 5px;
+  margin-top: -10px;
+  transition: background-color 0.3s, transform 0.3s;
+  font-family: "Handjet", cursive;
+  font-family: "Russo One", sans-serif;
+}
+
+.end-btn:hover{
+  background-color: black;
+  color: azure;
+  transform: scale(1.01);
+}
+
 /* media queries */
 @media (max-width: 954px) {
   .item-detail {

@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import Swal from "sweetalert2";
 import "./ItemCount.css";
 
 const ItemCount = ({ initial, stock, onAdd }) => {
@@ -11,17 +10,7 @@ const ItemCount = ({ initial, stock, onAdd }) => {
   }, [initial])
 
   const agregarProd = () => {
-    counter < stock
-      ? setCounter(counter + 1)
-      : Swal.fire({
-          icon: "error",
-          text: "Stock agotado, lo sentimos.",
-          toast: true,
-          position: "bottom-end",
-          showConfirmButton: false,
-          timer: 3000,
-          timerProgressBar: true,
-        });
+    setCounter(counter + 1)   
   };
 
   const quitarProd = () => {
@@ -35,7 +24,7 @@ const ItemCount = ({ initial, stock, onAdd }) => {
           -
         </button>
         <h3 className="count-value">{counter}</h3>
-        <button type="button" className="count-btn" onClick={agregarProd}>
+        <button type="button" className="count-btn" disabled={counter >= stock} onClick={agregarProd}>
           +
         </button>
       </div>
