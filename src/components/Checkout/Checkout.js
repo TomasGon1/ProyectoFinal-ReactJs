@@ -8,6 +8,7 @@ import {
   doc,
   getDoc,
 } from "firebase/firestore";
+import "./Checkout.css"
 
 export const Checkout = () => {
   const [nombre, setNombre] = useState("");
@@ -86,7 +87,7 @@ export const Checkout = () => {
   };
 
   return (
-    <>
+    <div className="div-container">
       <h2>Rellena el formulario para confirmar la compra</h2>
 
       <form onSubmit={formulario}>
@@ -158,6 +159,6 @@ export const Checkout = () => {
           <button type="submit">Finalizar compra</button>
         </div>
       </form>
-    </>
+    </div>
   );
 };

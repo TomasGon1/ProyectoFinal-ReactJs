@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import {getFirestore, collection, getDocs, where, query} from 'firebase/firestore';
 import ItemList from "../ItemList/ItemList";
+import { PacmanLoader } from "react-spinners";
 import "./ItemListContainer.css"
 
 const ItemListContainer = () => {
@@ -20,11 +21,18 @@ const ItemListContainer = () => {
     }
   }, [id])
 
+  
+  if(item.length === 0){
+    return (
+      <div className="loader-style">
+        <PacmanLoader color="black" size={80} speedMultiplier={2} />
+      </div>
+    );
+  }
+  
   return (
     <div className="div-container">
-      
-      <ItemList item={item} />
-      
+      <ItemList item={item} /> 
     </div>
   );
 };

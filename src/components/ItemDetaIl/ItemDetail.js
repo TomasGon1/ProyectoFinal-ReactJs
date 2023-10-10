@@ -3,11 +3,13 @@ import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../../context/cartContext";
 import Swal from "sweetalert2";
+import { PacmanLoader } from "react-spinners";
 import "./ItemDetail.css";
 
-const ItemDetail = ({ item }) => {
+const ItemDetail = ({ item, loading }) => {
   const [goCart, setGoCart] = useState(false);
   const { addItem } = useCartContext();
+  
   const onAdd = (quantity) => {
     setGoCart(true);
     addItem(item, quantity);
@@ -25,7 +27,12 @@ const ItemDetail = ({ item }) => {
 
   return (
     <div className="item-detail-container">
-      <div className="item-detail">
+      {loading ? (
+        <div className="loader-style">
+        <PacmanLoader color="black" size={80} speedMultiplier={2} />
+      </div>
+      ) : (
+         <div className="item-detail">
         <div className="img-detail">
           <img src={item.image} alt={item.name} />
         </div>
@@ -44,6 +51,7 @@ const ItemDetail = ({ item }) => {
           </div>
         </div>
       </div>
+      )};
     </div>
   );
 };
