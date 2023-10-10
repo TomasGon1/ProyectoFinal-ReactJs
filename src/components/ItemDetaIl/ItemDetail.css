@@ -96,6 +96,13 @@
   transform: scale(1.01);
 }
 
+.loader-style{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
 /* media queries */
 @media (max-width: 954px) {
   .item-detail {
