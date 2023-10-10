@@ -8,7 +8,7 @@ import {
   doc,
   getDoc,
 } from "firebase/firestore";
-import "./Checkout.css"
+import "./Checkout.css";
 
 export const Checkout = () => {
   const [nombre, setNombre] = useState("");
@@ -88,7 +88,11 @@ export const Checkout = () => {
 
   return (
     <div className="div-container">
-      <h2>Rellena el formulario para confirmar la compra</h2>
+      <div className="tittle-container">
+        <h2 className="tittle-form">
+          Rellene el formulario para confirmar la compra
+        </h2>
+      </div>
 
       <form onSubmit={formulario}>
         {cart.map((item) => (
@@ -101,62 +105,72 @@ export const Checkout = () => {
           </div>
         ))}
 
-        <div>
-          <label>Nombre:</label>
-          <input
-            className="lab-check"
-            type="text"
-            value={nombre}
-            onChange={(e) => setNombre(e.target.value)}
-          />
-        </div>
-        <div>
-          <label>Apellido:</label>
-          <input
-            className="lab-check"
-            type="text"
-            value={apellido}
-            onChange={(e) => setApellido(e.target.value)}
-          />
-        </div>
-        <div>
-          <label>Telefono:</label>
-          <input
-            className="lab-check"
-            type="text"
-            value={telefono}
-            onChange={(e) => setTelefono(e.target.value)}
-          />
-        </div>
-        <div>
-          <label>Email:</label>
-          <input
-            className="lab-check"
-            type="text"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <div>
-          <label>Cofirmar email:</label>
-          <input
-            className="lab-check"
-            type="text"
-            value={confirmEmail}
-            onChange={(e) => setConfirmEmail(e.target.value)}
-          />
-        </div>
-        {error && <p>{error}</p>}
+        <div className="form-container">
+          <div className="input-box">
+            <input
+              className="input-style"
+              type="text"
+              placeholder="Ingrese su nombre"
+              value={nombre}
+              onChange={(e) => setNombre(e.target.value)}
+            />
+          </div>
+          <div className="input-box">
+            <input
+              className="input-style"
+              type="text"
+              placeholder="Ingrese su apellido"
+              value={apellido}
+              onChange={(e) => setApellido(e.target.value)}
+            />
+          </div>
+          <div className="input-box">
+            <input
+              className="input-style"
+              type="number"
+              placeholder="Ingrese su telefono"
+              value={telefono}
+              onChange={(e) => setTelefono(e.target.value)}
+            />
+          </div>
+          <div className="input-box">
+            <input
+              className="input-style"
+              type="text"
+              placeholder="Ingrese su email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div className="input-box">
+            <input
+              className="input-style"
+              type="text"
+              placeholder="Confirme su email"
+              value={confirmEmail}
+              onChange={(e) => setConfirmEmail(e.target.value)}
+            />
+          </div>
 
-        {ordenId && (
-         <p>
-         ¡Gracias por tu compra! <br /> Este es tu numero de orden: <br />{" "}
-         {ordenId}{" "}
-       </p>
-        )}
+          {error && (
+            <div className="error-container">
+              <p className="error-style">*{error}</p>
+            </div>
+          )}
 
-        <div>
-          <button type="submit">Finalizar compra</button>
+          {ordenId && (
+            <div className="end-buy-container">
+              <p className="end-buy-style">
+                ¡Gracias por tu compra! <br /> Este es tu numero de seguimiento:{" "}
+                <br /> {ordenId}{" "}
+              </p>
+            </div>
+          )}
+        </div>
+        <div className="btn-container">
+          <button className="submit-btn" type="submit">
+            Finalizar compra
+          </button>
         </div>
       </form>
     </div>
