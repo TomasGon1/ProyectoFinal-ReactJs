@@ -11,8 +11,8 @@ const Cart = () => {
   if(cart.length === 0){
     return (
       <div className='div-container'>
-      <h2>No hay productos en el carrito 😞😞</h2>
-      <Link to="/">Ver productos!</Link>
+      <h2 className='tittle-style'>No hay productos en el carrito 😞😞</h2>
+      <Link to="/" className='link-style'><button className='btn-style'>Ver productos!</button></Link>
       </div>
     );
   }
@@ -22,11 +22,13 @@ const Cart = () => {
      {cart.map((item)=>(
       <ItemCart key={item.id} item={item}/>
      ))}
-     <p>Total: ${total()}</p>
+     <div className='total-price-container'>
+      <p className='total-price'>Total: ${total()}</p>
+    </div>
 
-     <Link to="/checkout">
+     <Link to="/checkout" className='link-style'>
       {' '}
-      <button>Finalizar compra</button>
+      <button className='btn-end'>Finalizar compra</button>
      </Link>
     </div>
   )

@@ -1,0 +1,93 @@
+.item-cart-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.item-cart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  height: 100%;
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.img-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -35px;
+  border-radius: 1.2rem;
+  box-shadow: 2px 2px 10px 2px black;
+  background-color: azure;
+  width: 320px;
+  height: 320px;
+}
+
+.img-cart img {
+  width: 300px;
+  height: 300px;
+}
+
+.info-cart {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  background-color: azure;
+  border-radius: 1.2rem;
+  box-shadow: 2px 2px 10px 2px black;
+}
+
+.tittle-cart {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.quantity-cart {
+  margin-top: 7px;
+  margin-left: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.unitaryp-cart {
+  margin-top: 7px;
+  margin-left: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.totalp-cart {
+  margin-top: 7px;
+  margin-left: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.btn-cart {
+  background-color: azure;
+  border-radius: 20px;
+  border: 1px solid;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  margin-top: -10px;
+  margin-left: 32rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-cart:hover {
+  background-color: black;
+  color: azure;
+  transform: scale(1.01);
+}
